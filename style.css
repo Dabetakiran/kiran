@@ -2,104 +2,42 @@
     margin: 0;
     padding: 0;
 }
-body{
-    overflow: hidden;
-    animation: shakebody linear 6s infinite;
-}
-.sky{
-    height: 100vh;
-    width: 100%;
-    background-image: url(background.jpg);
-    background-repeat: no-repeat;
-    position: absolute;
-}
 
-.trees{
-    height: 100vh;
-    width: 100%;
-    background-image: url(trees.png);
-    background-size: cover; 
-    position: absolute;
-    top: -144px; 
-}
-.track{
-    height: 60vh;
-    width: 800vw;
-    background-image: url(track.png);
-    background-repeat: repeat-x; 
-    position: absolute;
-    top: 70vh;
-    animation: carMove linear 13s infinite;
-
+nav{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272822;
+    color: white;
+    height: 72px;
 }
 
-.car{
-    height: 100px;
-    width: 380px;
-    background-image: url(car_body.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 444px;
-    bottom:30vh;
-    animation: shake linear .3s infinite;
-
+.content{
+    font-family: 'Potta One', cursive;
 }
 
-
-.wheel1 img{
-    width: 77px;
-    position: relative;
-    top:42px;
-    left:42px;
-    animation: wheelRotation linear .16s infinite;
+.container{
+    /* background-color: red; */
+    width: 50vw;
+    padding: 32px 0;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
-
-.wheel2 img{
-    width: 77px;
-    position: relative;
-    top: -39px;
-    left: 235px;
-    animation: wheelRotation linear .16s infinite;
-
+.logo{
+    padding: 0 13px;
 }
 
-@keyframes wheelRotation
-{
-    100%{
-        transform: rotate(360deg);
-    }
+.logo img{
+    width: 32px;
 }
 
-@keyframes carMove
-{
-    100%{
-        transform: translateX(-500vw);
-    }
-}
-
-@keyframes shake
-{
-    0%{
-        transform: translateY(-5px);
-    }
-    50%{
-        transform: translateY(5px);
-    }
-    100%{
-        transform: translateY(-5px);
-    }
-}
-@keyframes shakebody
-{
-    0%{
-        transform: translateY(-50px);
-    }
-    50%{
-        transform: translateY(50px);
-    }
-    100%{
-        transform: translateY(-50px);
-    }
+.toolbar-item button{
+    cursor: pointer !important;
+    color: white !important;
+    border: 1px solid white !important;
+    border-radius: 15px !important;
+    padding: 5px 14px !important;
 }
